@@ -1,0 +1,11 @@
+import example.*
+import estados.*
+
+describe "Tests de Tamagochi" {
+
+	test "si esta hambriento y come se pone contento" {
+		const tamagochi = new Mascota(estado = new Hambriento())	
+		tamagochi.come()
+		assert.that(tamagochi.estaContento())
+	}
+}
